@@ -8,6 +8,6 @@ The	 device	 has	 four	 coloured	 buttons,	 each	 producing	 a	 particular	 tone
 activated	by	the	device.	A	round	in	the	game	consists	of	the	device	lighting	up	one	or	more	buttons	
 in	a	random	order,	after	which	the	player	must	reproduce	that	order	by	pressing	the	buttons.	As	the	
 game	progresses,	the	number	of	buttons	to	be	pressed	increases.	
-(Created as a Html, CSS Javascript web app)
+(Created as a Html, CSS, Javascript web app)
 
 ![SimonMemoryGame](https://github.com/user-attachments/assets/23a87153-6622-4801-89e9-0935c2f19d7d)
