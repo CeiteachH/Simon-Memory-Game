@@ -1,10 +1,7 @@
-// using jquery
-
+// using jquery in this code
 var isGameOn = false; // set game on and off
 let timer = null; 
 
-// from https://www.youtube.com/watch?v=W0MxUHlZo6U his links to code wasnt working
-// timestamp is 14.35
 // 4 circle info
 let greenCircle = $('.greenCircle'); // 4 circle info
 let blueCircle = $('.blueCircle');
@@ -17,7 +14,7 @@ currentScoreButton.innerHTML = currentScore; // changing it in html to output th
 
 let highScoreButton = document.querySelector('.highest-score') 
 let highestScore = '00';
-highScoreButton.innerHTML = highestScore; // changing it in html to uutput highest score
+highScoreButton.innerHTML = highestScore; // changing it in html to output highest score
 
 var circles = [".greenCircle",".redCircle",".yellowCircle",".blueCircle"]; // array of all four circles
 var sequence = []; // stores the random selected circle value in
@@ -28,7 +25,6 @@ var tempo = 500; // tempo at start
 var clickable = false; // buttons user can select
 var signal; // call signal to run random select value.
 
-// inspired by https://www.youtube.com/watch?v=W0MxUHlZo6U but using jquery, timestamp around 16.00
 // created a flash function that flashes to white for 500ms
 function flash(circle) {
     $(circle).addClass('active');
@@ -37,7 +33,6 @@ function flash(circle) {
     },500); 
 }
 
-// code inspired by playSequence by https://www.geeksforgeeks.org/create-a-simon-game-using-html-css-javascript/
 // flashes the sequence in order
 function flashAll(sequence) { 
     var i = 0;
@@ -64,7 +59,6 @@ function failFlash() {
     }, 600 + 50); // small pause between each flash 50ms
 }
 
-// code altered from addToSequence https://www.geeksforgeeks.org/create-a-simon-game-using-html-css-javascript/
 // add random number between 0-3 to array, used for adding circle to sequence
 function addNew() { 
     var randomIndex = Math.floor(Math.random() * 4); 
@@ -89,7 +83,6 @@ function newRound() {
 }
 
 // when a user clicks on a circle
-// code taken from and altered using handleClick from https://www.geeksforgeeks.org/create-a-simon-game-using-html-css-javascript/
 $(".circle").on("click", function() { // all circle elements that can click
     if (!clickable && isGameOn) { // clickable is true
         clearTimeout(timer);
