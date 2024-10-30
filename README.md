@@ -1,8 +1,8 @@
 # Simon-Memory-Game
 The	Simon	electronic	memory	skill	game,	invented	in	1978	by	Ralph	H.	Baer	and	Howard	J.	Morrison,	
 creates	a	series	of	tones	and	lights	and	requires	a	user	to	repeat	the	sequence.	If	the	user	succeeds,	
-the	series	becomes	progressively	longer	and	more	complex.	Once	the	user	fails	or	the	Hme	limit	runs	
-out,	 the	 game	 is	 over.	 	 Simon	 is	 named	 aWer	 the	 simple	 children's	 game	 of	 Simon	 Says,	 but	 the	
+the	series	becomes	progressively	longer	and	more	complex.	Once	the	user	fails	or	the	time	limit	runs	
+out,	 the	 game	 is	 over.	 	 Simon	 is	 named	 after	 the	 simple	 children's	 game	 of	 Simon	 Says,	 but	 the	
 gameplay	is	based	on	Atari's	unpopular	Touch	Me	arcade	game	from	1974.	
 The	 device	 has	 four	 coloured	 buGons,	 each	 producing	 a	 parHcular	 tone	 when	 it	 is	 pressed	 or	
 acHvated	by	the	device.	A	round	in	the	game	consists	of	the	device	lighHng	up	one	or	more	buGons	
