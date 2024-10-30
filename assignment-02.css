@@ -1,0 +1,108 @@
+body {
+    background: rgb(147, 7, 131);
+}
+
+/* black background circle */
+.blackCircle { 
+    position: fixed;
+    height: 350px;
+    width: 350px;
+    background-color: black;
+    border-radius: 50%; /* circle shape */
+    top: 50%; 
+    left: 50%; 
+    margin-left: -175px; /* half the circle width */
+    margin-top: -175px; /* half the circle height */
+    z-index: 1; /* used to layer the circles */
+}
+
+/* class for 4 ingame circles */
+.circle { 
+    position: fixed;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%; /* circle shape */
+    margin-left: -100px; /* half the circle width */
+    margin-top: -100px; /* half the circle height */
+    z-index: 2; /* puts the 4 ingame circles in a higher layer above background black circle*/
+    box-shadow: 1px 1px 0px 10px black; /* outline of each circle */
+}
+
+.greenCircle {
+    background-color: green;
+    top: 30%; 
+    left: 38%; 
+}
+
+.yellowCircle {
+    background-color: yellow;
+    top: 70%; 
+    left: 38%; 
+}
+
+.redCircle {
+    background-color: red;
+    top: 30%; 
+    left: 66%; 
+}
+
+.blueCircle {
+    background-color: blue;
+    top: 70%; 
+    left: 66%;
+}
+
+/* the class for the 3 buttons start highscore and currentscore */
+.button { 
+    position: fixed;
+    font-family: Orbitron;
+    text-align: center;
+    background-color: darkgrey;
+    font-size: 28px;
+    border: none; /* remove border */
+    border-radius: 10px; /* adds curves to the buttons as shown in assignment */
+    z-index: 3;  /* puts the 3 buttons in a higher layer above background black circle and 4 ingame circles*/
+ 
+}
+
+/* start button in middle to start game */
+.start { 
+    top: 47.5%;
+    left: 45%;
+    cursor: pointer;
+}
+
+/* button on left for highest score */
+.highest-score {
+    top: 47.5%;
+    left: 39.9%;
+    height: 38px;
+    width: 62px;
+}
+
+/* button on right for current score */
+.current-score { 
+    top: 47.5%;
+    left: 54.9%;
+    height: 38px;
+    width: 62px;
+}
+
+/* this is the circle that signifies when the game is being played and when its not */
+.miniCircle { 
+    position: fixed;
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    border-radius: 50%; /* circle shape */
+    top: 56%; 
+    left: 50%; 
+    margin-left: -5px; /* half the circle width */
+    margin-top: -5px; /* half the circle height */
+    z-index: 3;  /* puts the mini circle in a higher layer above background black circle and 4 ingame circles*/
+}
+
+/* flashes to signify what colour to pick */
+.active { 
+    background-color: white;
+}
